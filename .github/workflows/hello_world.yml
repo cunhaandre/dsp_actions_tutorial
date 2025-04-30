@@ -20,11 +20,7 @@ jobs:
    - name: install
      run: |
       pip install cowsay
-
-  run-cowsay:
-    runs-on: ubuntu-latest
-    steps:
-    - name: use
-      run: |
+   - name: use
+     run: |
        cowsay -c cheese -t 'hey there'
 
