@@ -13,3 +13,16 @@ jobs:
       run: echo "Hello DTU biosustain!"
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
+
+  install-cowsay:
+   runs-on: ubuntu-latest
+   steps:
+   - name: install
+     run: pip install cowsay
+
+  run-cowsay:
+    runs-on: ubuntu-latest
+    steps:
+    - name: use
+      run: cowsay -c chesse -t 'hey there'
+
