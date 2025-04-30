@@ -18,11 +18,13 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: install
-     run: pip install cowsay
+     run: |
+      pip install cowsay
 
   run-cowsay:
     runs-on: ubuntu-latest
     steps:
     - name: use
-      run: cowsay -c chesse -t 'hey there'
+      run: |
+       cowsay -c chesse -t 'hey there'
 
