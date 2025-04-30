@@ -26,5 +26,5 @@ jobs:
     steps:
     - name: use
       run: |
-       cowsay -c chesse -t 'hey there'
+       cowsay -c cheese -t 'hey there'
 
