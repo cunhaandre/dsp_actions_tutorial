@@ -14,7 +14,7 @@ jobs:
     - name: bioengineering
       run: echo "Hello DTU bioengineering!"
 
-  install-cowsay:
+  install-and-use-cowsay:
    runs-on: ubuntu-latest
    steps:
    - name: install
@@ -23,4 +23,14 @@ jobs:
    - name: use
      run: |
        cowsay -c cheese -t 'hey there'
+
+    install-and-use-cowpy:
+      runs-on: ubuntu-latest
+      steps:
+      - name: install
+        run: |
+         pip install cowpy
+      - name: use
+        run: |
+          cowpy -c tux hi there
 
