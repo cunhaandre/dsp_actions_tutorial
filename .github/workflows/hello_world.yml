@@ -17,6 +17,7 @@ jobs:
   install-and-use-cowpy:
    runs-on: ubuntu-latest
    steps:
+   - uses: actions/checkout@v4  
    - name: install
      run: |
       pip install cowpy
