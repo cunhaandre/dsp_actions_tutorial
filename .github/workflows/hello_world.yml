@@ -24,13 +24,13 @@ jobs:
      run: |
        cowsay -c cheese -t 'hey there'
 
-    install-and-use-cowpy:
-      runs-on: ubuntu-latest
-      steps:
-      - name: install
-        run: |
-         pip install cowpy
-      - name: use
-        run: |
-          cowpy -c tux hi there
+  install-and-use-cowpy:
+   runs-on: ubuntu-latest
+   steps:
+   - name: install
+     run: |
+      pip install cowpy
+   - name: use
+     run: |
+      cowpy -c tux hi there
 
